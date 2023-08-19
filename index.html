@@ -59,9 +59,57 @@
     padding: 20px;
     text-align: center;
   }
+  .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 </style>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+            <li class="nav-item"><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+            <li class="nav-item"><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+            <li class="nav-item"><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
 <header>
   <h1>Indian Ceramic Society</h1>
 </header>
